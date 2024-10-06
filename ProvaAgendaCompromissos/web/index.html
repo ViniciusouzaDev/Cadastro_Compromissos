@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="ProvaStyle.css"/>
+        
+        <title>CADASTRO COMPROMISSOS</title>
+    </head>
+   <body>
+               
+    <div class="container">
+          
+            <div class="titulo-principal">Agenda de Compromissos</div>
+            <div class="titulo-principal">Agenda de Compromissos</div>
+            
+        <form method="post" action="Cod_Java.jsp" >
+  
+            <div class="titulo"> <h1>Agenda de Compromisssos</h1> </div>
+            
+            <label for="titulo"> Título:</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Digite o título de sua agenda" required>
+            
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="hora_inicio">Hora de Início:</label>
+            <input type="time" id="hora_inicio" name="hora_inicio" required>
+            
+             <label for="hora_termino">Hora de Término:</label>
+             <input type="time" id="hora_termino" name="hora_termino" required>
+
+            <label for="local">Local:</label>
+            <input type="text" id="local" name="local" placeholder="Digite o local do compromisso" required>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" rows="4" placeholder="Adicione detalhes sobre o compromisso"></textarea>
+
+             <label for="participantes">Participantes:</label>
+             <input type="text" id="participantes" name="participantes" placeholder="Digite os nomes ou e-mails dos participantes">
+             
+             <label for="categoria">Categoria/Tipo de Compromisso:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecione a categoria</option>
+                    <option value="trabalho">Trabalho</option>
+                    <option value="pessoal">Pessoal</option>
+                    <option value="reuniao">Reunião</option>
+                </select>
+
+              <label for="prioridade">Prioridade:</label>
+                <select id="prioridade" name="prioridade" required>
+                    <option value="">Selecione a prioridade</option>
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+              
+               <label for="status">Status do Compromisso:</label>
+                <select id="status" name="status" required>
+                    <option value="">Selecione o status</option>
+                    <option value="agendado">Agendado</option>
+                    <option value="em_andamento">Em Andamento</option>
+                    <option value="concluido">Concluído</option>
+                    <option value="cancelado">Cancelado</option>
+                </select>
+             
+            <button type="submit">Cadastrar Compromisso</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+       
